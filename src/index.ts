@@ -11,7 +11,6 @@ interface fontsReducer extends fontTarget {
   instance: any
 }
 const fonts: fontsReducer[] = []
-
 export default createUnplugin<Options | undefined>(options => ({
   // 插件名称
   name: 'myTest',
@@ -21,8 +20,9 @@ export default createUnplugin<Options | undefined>(options => ({
 
   // 指明它们仅在 'build' 或 'serve' 模式时调用
   apply: 'build', // apply 亦可以是一个函数
-  buildEnd() {
-    console.log('x')
+  async generateBundle(_: any, bundler: any) {
+    console.log('liucai')
+    console.log(bundler)
   },
 }))
 const getConfig = ({ fileUrl = 'default', target = 3500, outPutType = 'woff2' }: Partial<fontTarget>,
