@@ -1,0 +1,17 @@
+@font-face {
+    font-family: myfont1;
+    src: url("LXGWWenKai-Regular.ttf");
+}
+@font-face {
+    font-family: myfont2;
+    src: url("SmileySans-Oblique.ttf");
+}
+.myfont1{
+    font-family: myfont1, serif;
+}
+.myfont2{
+    font-family: myfont2, serif;
+}
+*{
+    font-size: 30px;
+}

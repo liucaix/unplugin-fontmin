@@ -84,6 +84,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "fontmin": "^0.9.9",
     "unplugin": "^1.0.1"
   },
   "devDependencies": {
